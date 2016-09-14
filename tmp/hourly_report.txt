@@ -1,0 +1,41 @@
+hourly nginx log report
+ 
+web status 200:
++-------+--------------------------------------------------------------+----------+
+| count |                             uri                              | avg_time |
++-------+--------------------------------------------------------------+----------+
+|  9345 |              /hourlyRate/front/main/ssoLogin.do              |  139ms   |
+|  6122 |                 /hourlyRate/api/v1.0/orders                  |   75ms   |
+|  6187 |              /hourlyRate/api/v1.0/cars/HAIKOU/               |   29ms   |
+|  5511 |           /hourlyRate/api/v1.0/sites/return/HAIKOU           |   13ms   |
+|  5513 |            /hourlyRate/api/v1.0/sites/take/HAIKOU            |   13ms   |
+|  4283 |       /hourlyRate/api/v1.0/notifications/notification        |   12ms   |
+|  184  |              /hourlyRate/api/v1.0/pay/callback               |   31ms   |
+|  110  |               /hourlyRate/api/v1.0/cars/SANYA/               |   12ms   |
+|   85  |            /hourlyRate/api/v1.0/sites/take/SANYA             |   13ms   |
+|   85  |           /hourlyRate/api/v1.0/sites/return/SANYA            |   12ms   |
+|   84  |            /hourlyRate/api/v1.0/cars/HAIKOU/4308             |   13ms   |
+|   68  |   /hourlyRate/api/v1.0/subscribing/HAIKOU/%E7%90%BCA1N377    |   54ms   |
+|   68  | /hourlyRate/api/v1.0/rule/time/widget/HAIKOU/%E7%90%BCA1N377 |   12ms   |
+|   65  |   /hourlyRate/api/v1.0/subscribing/HAIKOU/%E7%90%BCA1M175    |   55ms   |
+|   64  | /hourlyRate/api/v1.0/rule/time/widget/HAIKOU/%E7%90%BCA1M175 |   12ms   |
+|   53  |   /hourlyRate/api/v1.0/subscribing/HAIKOU/%E7%90%BCA1M558    |   53ms   |
+|   53  |   /hourlyRate/api/v1.0/subscribing/HAIKOU/%E7%90%BCA1EV23    |   57ms   |
+|   48  |   /hourlyRate/api/v1.0/subscribing/HAIKOU/%E7%90%BCA1L831    |   51ms   |
+|   48  | /hourlyRate/api/v1.0/rule/time/widget/HAIKOU/%E7%90%BCA1M558 |   12ms   |
+|   47  | /hourlyRate/api/v1.0/rule/time/widget/HAIKOU/%E7%90%BCA1L831 |   11ms   |
++-------+--------------------------------------------------------------+----------+ 
+web status 404:
++-------+----------------------------------------+-----------+
+| count |                  uri                   | http_code |
++-------+----------------------------------------+-----------+
+|   1   |     /hourlyRate/api/v1.1/cars/car/     |    404    |
+|   1   | /hourlyRate/api/v1.0/terminal/control/ |    404    |
+|   1   |     /hourlyRate/api/v1.0/deposite/     |    404    |
+|   1   |              /hourlyRate/              |    404    |
++-------+----------------------------------------+-----------+ 
+web status 504:
+ 
+web status 502:
+ 
+web status 500:

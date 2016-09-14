@@ -1,0 +1,39 @@
+charge nginx log report
+ 
+web status 200:
++-------+-------------------------------------------------------------+----------+
+| count |                             uri                             | avg_time |
++-------+-------------------------------------------------------------+----------+
+| 32641 |           /charge/front/provinces/v1.0/ALL/cities           |   7ms    |
+|  6129 | /charge/front/orders/v1.0/013215783472160912232417/charging |   34ms   |
+|  2733 | /charge/front/orders/v1.0/015607582760160913163752/charging |  292ms   |
+|  2400 |              /charge/front/chargeGuns/v1.0/ALL              |   56ms   |
+|  2010 |             /charge/front/orders/v1.0/orderList             |   16ms   |
+|  1437 | /charge/front/orders/v1.0/017389785206160913131017/charging |   43ms   |
+|  1116 | /charge/front/orders/v1.0/018876085111160913123221/charging |  200ms   |
+|  1075 |         /charge/front/cities/v1.0/ALL/powerStations         |  901ms   |
+|  821  | /charge/front/orders/v1.0/013687517575160913111606/charging |   39ms   |
+|  773  | /charge/front/orders/v1.0/018689570311160913162417/charging |  110ms   |
+|  758  | /charge/front/orders/v1.0/018976459767160913115833/charging |   34ms   |
+|  740  | /charge/front/orders/v1.0/013902031231160913153827/charging |   54ms   |
+|  701  | /charge/front/orders/v1.0/013807508766160913145754/charging |   34ms   |
+|  684  | /charge/front/orders/v1.0/015120892490160913195807/charging |   35ms   |
+|  639  | /charge/front/orders/v1.0/013698907190160913083317/charging |   56ms   |
+|  614  |        /charge/front/cities/v1.0/HAIKOU/powerStations       |  468ms   |
+|  527  | /charge/front/orders/v1.0/013876762902160913140551/charging |   53ms   |
+| 33138 |                /charge/front/provinces/v1.0/                |   7ms    |
+|  489  | /charge/front/orders/v1.0/013519811198160913163535/charging |   37ms   |
+|  491  | /charge/front/orders/v1.0/013078993229160913214814/charging |  690ms   |
++-------+-------------------------------------------------------------+----------+ 
+web status 404:
++-------+-----------------------------------------+-----------+
+| count |                   uri                   | http_code |
++-------+-----------------------------------------+-----------+
+|   3   | /charge/front/cities/v1.0/powerStations |    404    |
+|   1   |      /charge/front/chargeGuns/v1.0/     |    404    |
++-------+-----------------------------------------+-----------+ 
+web status 504:
+ 
+web status 502:
+ 
+web status 500:

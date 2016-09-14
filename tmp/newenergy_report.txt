@@ -1,0 +1,62 @@
+newenergy nginx log report
+ 
+web status 200:
++--------+------------------------------------------------+----------+
+| count  |                      uri                       | avg_time |
++--------+------------------------------------------------+----------+
+| 179951 |      /newEnergy/front/wallet/getMoney.do       |   38ms   |
+| 39041  |   /newEnergy/front/provinceCity/listCity.do    |   96ms   |
+|  7099  |        /newEnergy/front/carType/get.do         |  203ms   |
+|  5348  |    /newEnergy/rpc/daysRental/listForCars.do    |   52ms   |
+|  3447  | /newEnergy/front/credit/currentCreditPoint.do  |  141ms   |
+|  2997  |     /newEnergy/rpc/order/listForServer.do      |  601ms   |
+|  953   | /newEnergy/front/takeReturnCarAddress/list.do  |   30ms   |
+|  699   |        /newEnergy/front/coupon/list.do         |  214ms   |
+|  576   |       /newEnergy/front/order/genOrder.do       |  749ms   |
+|  485   |     /newEnergy/front/powerStation/list.do      |   17ms   |
+|  262   |  /newEnergy/front/takeReturnCarAddress/all.do  |   11ms   |
+|  241   |      /newEnergy/front/wallet/menuList.do       |   16ms   |
+|  234   |    /newEnergy/rpc/walletPay/prePayOrder.do     |  480ms   |
+|  233   |           /newEnergy/api/wallet/pay            |  183ms   |
+|  165   |       /newEnergy/front/main/ssoLogin.do        |  180ms   |
+|  124   |         /newEnergy/rpc/v1.0/site/list          |  138ms   |
+|  116   |     /newEnergy/front/wallet/submitOrder.do     |   26ms   |
+|  112   |        /newEnergy/front/wallet/toPay.do        |  310ms   |
+|  111   |     /newEnergy/front/order/submitOrder.do      |  249ms   |
+|   99   | /newEnergy/front/wallet/listRechargeRecords.do |   49ms   |
++--------+------------------------------------------------+----------+ 
+web status 404:
++-------+--------------------------------------------+-----------+
+| count |                    uri                     | http_code |
++-------+--------------------------------------------+-----------+
+|   3   |                 /index.php                 |    404    |
+|   1   |             /zabbix/jsrpc.php              |    404    |
+|   1   |                  /zabbix/                  |    404    |
+|   1   |               /xampp/cgi.cgi               |    404    |
+|   1   |            /www/admin/index.php            |    404    |
+|   1   |                   /web/                    |    404    |
+|   1   |                 /uploads/                  |    404    |
+|   1   |               /uploadfiles/                |    404    |
+|   1   |                /uploadfile/                |    404    |
+|   1   |                  /upload/                  |    404    |
+|   1   |                 /upfiles/                  |    404    |
+|   1   |                  /upfile/                  |    404    |
+|   1   |               /.svn/entries                |    404    |
+|   1   |                   /solr/                   |    404    |
+|   1   |              /server-status/               |    404    |
+|   1   |                /robots.txt                 |    404    |
+|   1   |              /phpRedisAdmin/               |    404    |
+|   1   |     /newEnergy/front/powerStation/web/     |    404    |
+|   1   |   /newEnergy/front/powerStation/uploads/   |    404    |
+|   1   | /newEnergy/front/powerStation/uploadfiles/ |    404    |
++-------+--------------------------------------------+-----------+ 
+web status 504:
+ 
+web status 502:
+ 
+web status 500:
++-------+-----------------------------------------+-----------+
+| count |                   uri                   | http_code |
++-------+-----------------------------------------+-----------+
+|   1   | /newEnergy/rpc/walletPay/prePayOrder.do |    500    |
++-------+-----------------------------------------+-----------+
